@@ -143,4 +143,7 @@ def main_app():
 # ==========================================
 # 3. ROUTING LOGIC (Login Page dikhana hai ya Main App)
 # ==========================================
-if st
+if st.session_state['logged_in']:
+    main_app()
+else:
+    login_page()
